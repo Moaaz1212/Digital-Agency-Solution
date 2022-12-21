@@ -193,7 +193,7 @@ section .img-4 {
 
 .service {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 130px;
 }
 .service .service-title {
@@ -269,6 +269,40 @@ section .img-4 {
 .service .all-services .ui-design img {
     margin: 20px 10px;
 }
+.video {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 220px;
+    margin-bottom: 10px;
+}
+.video .video-title {
+    display: inline-block;
+}
+.video .video-title h3 {
+    width: 200px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.video .video-title p {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 15px;
+    color: #707070;
+    width: 270px;
+}
+.video .video-title button {
+    width: 125px;
+    height: 40px;
+    color: white;
+    background-color: #FE846F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.video img {
+    display: inline-block;
+}
+
 
 
 
@@ -336,6 +370,22 @@ section .img-4 {
     }
     .service .service-title h3,
     .service .service-title p {
+        margin: auto;
+    }
+    .video {
+        display: block;
+    }
+    .video .video-title {
+        text-align: center;
+        display: block;
+        margin-bottom: 30px;
+    }
+    .video .video-title h3,
+    .video .video-title p {
+        margin: auto;
+    }
+    .video img {
+        display: block;
         margin: auto;
     }
 
@@ -406,11 +456,27 @@ section .img-4 {
     .service .service-title {
         margin-bottom: 120px;
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         text-align: center;
     }
     .service .service-title h3,
     .service .service-title p {
+        margin: auto;
+    }
+    .video {
+        display: block;
+    }
+    .video .video-title {
+        text-align: center;
+        display: block;
+        margin-bottom: 30px;
+    }
+    .video .video-title h3,
+    .video .video-title p {
+        margin: auto;
+    }
+    .video img {
+        display: block;
         margin: auto;
     }
 }
@@ -454,7 +520,7 @@ section .img-4 {
     }
     .service .service-title {
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         text-align: center;
     }
     .service .service-title h3,
