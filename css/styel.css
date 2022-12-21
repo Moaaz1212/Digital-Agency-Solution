@@ -22,14 +22,6 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-/* .container:first-of-type::after {
-    content: '';
-    width: 100%;
-    height: 90%;
-    background-color: rgb(255, 255, 255, 5%);
-    position: absolute;
-    clip-path: circle(60% at right 85%);
-} */
 
 header {
     background-color: #4754E0;
@@ -171,7 +163,7 @@ section .content-1 .details-1 button {
     border-radius: 5px;
     box-shadow: rgb(255, 255, 255, 16%) -1.1px 9px 21px 0;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 
 }
 section .img-1,
@@ -197,6 +189,87 @@ section .img-4 {
     top: 90%;
     left: 50%;
 }
+
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
+}
+.service .service-title {
+    display: inline-block;
+}
+.service .service-title h3 {
+    width: 200px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.service .service-title p {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 15px;
+    color: #707070;
+    width: 270px;
+}
+.service .service-title button {
+    width: 125px;
+    height: 40px;
+    color: white;
+    background-color: #FE846F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.service .all-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    /* row-gap: 5px; */
+    column-gap: 20px;
+    
+}
+.service .all-services div {
+    display: inline-block;
+}
+.service .all-services span {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.service .all-services img {
+    /* margin-bottom: 20px; */
+    width: 50px;
+    height: 50px;
+}
+.service .all-services p{
+    font-size: 14px;
+    color: #707070;
+    width: 200px;
+}
+.service .all-services .front {
+    margin-top: -50px;
+}
+.service .all-services .res-it {
+    margin-top: 50px;
+}
+.service .all-services .ui-design {
+    background-image: linear-gradient(to left top, #FF4B2B, #FF416C);
+    border-radius: 8px;
+}
+.service .all-services .ui-design span, 
+.service .all-services .ui-design p {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+} 
+.service .all-services .ui-design p {
+    padding-bottom: 20px;
+}
+.service .all-services .ui-design img {
+    margin: 20px 10px;
+}
+
 
 
 /* Mobile */
@@ -240,6 +313,30 @@ section .img-4 {
     }
     section .content-1 .details-2 {
         display: none;
+    } 
+    .service .all-services {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, auto);
+        row-gap: 30px;
+        
+    }
+    .service {
+        display: block;
+        padding-top: 100px;
+    }
+    .service .all-services div {
+        display: block;
+        margin: auto;
+    }
+    .service .service-title {
+        display: block;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    .service .service-title h3,
+    .service .service-title p {
+        margin: auto;
     }
 
 }
@@ -290,6 +387,32 @@ section .img-4 {
     section .content-1 .details-2 {
         display: none;
     }
+    .service 
+    .service .all-services {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, auto);
+        row-gap: 5px;
+        column-gap: 20px;
+        
+    }
+    .service {
+        display: block;
+        padding-top: 100px;
+    }
+    .service .all-services div {
+        display: block;
+    }
+    .service .service-title {
+        margin-bottom: 120px;
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .service .service-title h3,
+    .service .service-title p {
+        margin: auto;
+    }
 }
  /*labtop small screens*/
 @media only screen and (min-width: 769px) and (max-width: 1024px){ 
@@ -313,6 +436,32 @@ section .img-4 {
     section .content-1 .details-2 {
         display: none;
     }
+    .service 
+    .service .all-services {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        row-gap: 5px;
+        column-gap: 20px;
+        
+    }
+    .service {
+        display: block;
+        padding-top: 100px;
+    }
+    .service .all-services div {
+        display: block;
+    }
+    .service .service-title {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .service .service-title h3,
+    .service .service-title p {
+        margin: auto;
+    }
+
 
 }
  /*large  Device*/
