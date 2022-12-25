@@ -145,7 +145,6 @@ section .content-1 .details-1 span {
 section .content-1 .details-1 h1 {
     padding: 12px 0 24px;
     font-size: 46px;
-    width: 320px;
     font-weight: 400;
 }
 section .content-1 .details-1 p {
@@ -272,7 +271,7 @@ section .img-4 {
 .video {
     display: flex;
     justify-content: space-around;
-    margin-top: 220px;
+    margin-top: 180px;
     margin-bottom: 150px;
 }
 .video .video-title {
@@ -348,7 +347,6 @@ section .img-4 {
     font-weight: 400;
 }
 .lastest-work .details p {
-    width: 500px;
     padding-top: 20px;
     padding-bottom: 50px;
     font-size: 14px;
@@ -357,7 +355,7 @@ section .img-4 {
 .lastest-work .images {
     text-align: center;
     padding-bottom: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
 }
 .lastest-work .images img:nth-of-type(2) {
     padding-left: 15px;
@@ -369,11 +367,164 @@ section .img-4 {
 
 
 
+@media only screen and (max-width:320px){
+    .container {
+        width: 250px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    nav {
+        justify-content: space-around;
+    }
+    nav h2 a {
+        font-size: 20px;
+    }
+    nav ul li a {
+        font-size: 7px;
+    }
+    nav > button {
+        width: 27px;
+        font-size: 7px;
+        display: none;
+    }
+    nav ul.main-nav {
+        justify-content: right;
+    }
+    ul.main-nav > li:not(li:first-of-type){
+        display: none;
+    }
+    .dropbtn {
+        font-size: 15px;
+    }
+    .dropdown-content a {
+        font-size: 13px;
+    }
+    section {
+        text-align: center;
+    }
+    section .content-1 .details-1 {
+        display: block;
+    }
+    section .content-1 .details-1 > span {
+        font-size: 17px;
+    }
+    section .content-1 .details-1 h1 {
+        font-size: 33px;
+    }
+    section .content-1 .details-1 p {
+        font-size: 11px;
+        width: 250px;
+    }
+    section .content-1 .details-2 {
+        display: none;
+    } 
+    .service .all-services {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, auto);
+        row-gap: 30px;
+        
+    }
+    .service {
+        display: block;
+        padding-top: 100px;
+    }
+    .service .all-services div {
+        display: block;
+        margin: auto;
+    }
+    .service .service-title {
+        display: block;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    .service .service-title h3,
+    .service .service-title p {
+        margin: auto;
+    }
+    .service .service-title p {
+        width: 250px;
+    }
+    .video {
+        display: block;
+        text-align: center;
+    }
+    .video .video-title {
+        text-align: center;
+        display: block;
+        margin-bottom: 30px;
+    }
+    .video .video-title h3,
+    .video .video-title p {
+        margin: auto;
+    }
+    .video .video-title p {
+        width: 250px;
+    }
+    .video img {
+        display: block;
+        text-align: center;
+        width: 250px;
+    }
+    .img {
+        display: block;
+    }
+    .img .img-title {
+        text-align: center;
+        display: block;
+        margin-bottom: 30px;
+    }
+    .img .img-title h3,
+    .img .img-title p {
+        margin: auto;
+    }
+    .img .img-title p {
+        width: 250px;
+    }
+    .img img {
+        display: block;
+        margin: auto;
+        width: 250px;
+    }
+    .lastest-work .icons {
+        display: none;
+    }
+    .lastest-work .title,
+    .lastest-work .details {
+        display: block;
+    }
+    .lastest-work .details h3 {
+        text-align: center;
+    }
+    .lastest-work .details p {
+        text-align: center;
+        width: 250px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        font-size: 13px;
+        color: #7c7c7c;
+    }
+    .lastest-work .images img:nth-of-type(2) {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+    }
+    .lastest-work .images img:nth-of-type(1) {
+        padding-bottom: 10px;
+
+    }
+    
+
+}
 /* Mobile */
 @media only screen and (min-width:320px) and (max-width:480px){
     .container {
         width: 300px;
-        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    nav {
+        justify-content: space-around;
     }
     nav h2 a {
         font-size: 22px;
@@ -398,6 +549,12 @@ section .img-4 {
     .dropdown-content a {
         font-size: 14px;
     }
+    section {
+        text-align: center;
+    }
+    section .content-1 .details-1 {
+        display: block;
+    }
     section .content-1 .details-1 > span {
         font-size: 18px;
     }
@@ -406,7 +563,7 @@ section .img-4 {
     }
     section .content-1 .details-1 p {
         font-size: 12px;
-        width: 300px;
+        width: 291px;
     }
     section .content-1 .details-2 {
         display: none;
@@ -505,7 +662,8 @@ section .img-4 {
 @media only screen and (min-width: 481px) and (max-width: 768px){
     .container {
         width: 460px;
-        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
 
     }
     nav h2 a {
@@ -534,6 +692,9 @@ section .img-4 {
     }
     .dropdown-content a {
         font-size: 16px;
+    }
+    section {
+        text-align: center;
     }
     section .content-1 .details-1 > span {
         font-size: 20px;
